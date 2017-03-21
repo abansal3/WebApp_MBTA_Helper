@@ -5,24 +5,63 @@
     <title>Amazing app to help you find nearest MBTA station</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+
+    <style>
+
+    p {
+      font-family: century gothic;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    form {
+      border-left:20px solid red;
+      border-right:20px solid red;
+    }
+
+    button {
+      background-color: mistyrose;
+      border:10px solid blue;
+      width: 100px
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-family: century gothic;
+      font-weight: bold;
+      color: darkslategrey;
+    }
+    </style>
 </head>
 <body>
-  <!-- <div class="container">
+  <div class="container">
     <div class="row">
       <div class="jumbotron">
-
+        <h1 align="center"> Find nearest station</h1>
       </div>
     </div>
-  </div> -->
-  <h1>Find nearest station</h1>
-  <form method="post" action="/">
-     Insert location <input name="location" type="text"/>
-    <button type="submit">Find nearest station</button>
-  </form>
-  {% if place and distance %}
-  <p>The nearest MBTA station, {{ place }} is {{ distance }} miles from here</p>
-  {% elif error == True %}
-  <p>No place was found. Please try again</p>
-  {% endif %}
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/glossy-waxed-wood-icons-signs/092511-glossy-waxed-wood-icon-signs-railroad-tracks.png" alt="railroadtrail" width="100%" />
+    </div>
+    <div class="col-sm-4">
+      <form method="post" action="/">
+         <p style="height:300px" align="center">
+           <br /><br /><br /><br />
+           Insert location <input name="location" type="text"/> <br /><br /><br /><br />
+          <button type="submit">Find nearest station</button>
+         </p>
+      </form>
+      {% if place and distance %}
+      <p>The nearest MBTA station, {{ place }} is {{ distance }} miles from here</p>
+      {% elif error == True %}
+      <p>No place was found. Please try again</p>
+      {% endif %}
+    </div>
+    <div class="col-sm-4">
+        <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/glossy-waxed-wood-icons-signs/092511-glossy-waxed-wood-icon-signs-railroad-tracks.png" alt="railroadtrail" width="100%" />
+    </div>
+  </div>
+
 </body>
 </html>
