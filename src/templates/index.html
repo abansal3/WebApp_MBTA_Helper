@@ -3,8 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Amazing app to help you find nearest MBTA station</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+  <!-- <div class="container">
+    <div class="row">
+      <div class="jumbotron">
 
+      </div>
+    </div>
+  </div> -->
+  <h1>Find nearest station</h1>
+  <form method="post" action="/">
+     Insert location <input name="location" type="text"/>
+    <button type="submit">Find nearest station</button>
+  </form>
+  {% if place and distance %}
+  <p>The nearest MBTA station, {{ place }} is {{ distance }} miles from here</p>
+  {% elif error == True %}
+  <p>No place was found. Please try again</p>
+  {% endif %}
 </body>
 </html>
