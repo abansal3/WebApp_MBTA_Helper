@@ -1,2 +1,12 @@
-# WebApp_MTBA_Helper
-This is the base repo for the Web App-MBTA Helper project. Please read instructions. 
+# Project Writeup and Reflection
+#### Arpit Bansal, Paula Prada, Vibhor Dhadda<br />
+#### Professor Shankar <br />
+#### Tech Savvy Entrepreneurs <br />
+#### 22 March 2017
+
+The project drew a bridge between using a web API connection and structured data (JSON) processing to find out essential information for transportation in the Greater Boston area. Our code comprised of four functions, one interconnected to another. We commenced the project by taking a properly formatted URL and returning it by a Python JSON object containing the response to that request. Next, we found out the longitude and latitude of the desired location, which in this case was the Prudential Tower. After we found that we located the nearest MBTA station based on those coordinates to show the distance between point A and B. Overall, this process led us to compare distances and conveniences for the everyday traveler and the functionality behind Google Maps. <br />
+
+From a process point of view, there was a lot of trial and error on the coding end of the spectrum. We constantly tested our code as we went through the process on the terminal. Initially our focus was geared towards the backend, where we tested each function separately, then combined the four functions to check if they work in conjunction. The frontend which the user views about the UI/UX was designed through html. Since, we weren’t aware of the project description prior to class we didn’t self study to prepare for this, but we were able to look for help by reading online blogs posted by expert coders. As a group, we found this project to show us the practical applications to coding and the functionality across different softwares. <br />
+
+Our team dynamic was quite mixed because we brought a range of skillsets to the table. Arpit, an expert coder, focussed primarily writing the code and fixing errors to make the code work efficiently. Paula focussed on enhancing the graphics of our online platform and html. Vibhor actively listened and learned from Arpit and Paula about coding and html and then focussed on writing the reflection. From the start we knew who was better at what part of the project and divided the work on that basis. Overall, we didn’t experience any issues while working together, but what we would do differently next time would be to learn every step that the other team member took part in. Due to time restraints this wasn’t possible and often times it was challenging to grasp such dense information in such a short time frame. 
+
